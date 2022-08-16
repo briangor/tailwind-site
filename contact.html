@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS | About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgColor: 'rgb(248, 247, 245)',
+                        footerColor: 'rgb(194, 194, 194)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-bgColor">
+    <nav class="flex flex-row">
+        <div class="basis-1/4 text-xl p-3">The Dojo Blog</div>
+        <div class="flex flex-row basis-3/4">
+            <ul class="basis-1/2 p-3 flex">
+                <li class="mr-2"><a href="./index.html">Home</a></li>
+                <li class="mr-2"><a href="./about.html">About</a></li>
+                <li class="mr-2"><a href="./blog.html">Blogs</a></li>
+                <li class="mr-2"><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="basis-1/2 flex p-2 justify-items-center">
+                <button class="rounded-lg border border-gray-300 px-2 py-2">Sign in</button>
+            </div>
+        </div>
+
+
+    </nav>
+
+   
+
+
+    <div class="w-full h-48 bg-footerColor text-center p-24 leading-9">
+        <p>© Aryton Senna 2022</p>
+        <p>Legal Stuff | Privacy Policy | Security</p>
+    </div>
+
+</body>
+
+</html>
