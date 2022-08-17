@@ -22,22 +22,27 @@
 </head>
 
 <body class="bg-bgColor">
-    <nav class="flex flex-row bg-white">
-        <div class="basis-1/4 text-xl p-3">The Dojo Blog</div>
-        <div class="flex flex-row basis-3/4">
-            <ul class="basis-1/2 p-3 flex">
+    <nav class="flex flex-row bg-white grid grid-cols-12">
+     
+        <div class="col-span-4 md:col-span-2 text-xl p-3" >The Dojo Blog</div>
+        <div class="font-bold flex absolute right-0 mt-6 mr-4 md:invisible col-span-8">
+            <button class="rounded-lg border border-gray-300 px-2 py-2">Menu</button>
+        </div>
+        <div class="flex flex-row md:col-span-10 grid grid-cols-12 invisible md:visible">
+            <ul class="col-span-8 p-3 flex justify-center">
                 <li class="mr-2"><a href="./index.html">Home</a></li>
                 <li class="mr-2"><a href="./about.html">About</a></li>
                 <li class="mr-2"><a href="./blog.html">Blogs</a></li>
                 <li class="mr-2"><a href="./contact.html">Contact</a></li>
             </ul>
-            <div class="basis-1/2 flex p-2 justify-items-center">
+            <div class="col-span-4 flex p-2 justify-end">
                 <button class="rounded-lg border border-gray-300 px-2 py-2">Sign in</button>
             </div>
         </div>
-    </nav>
+  
+</nav>
 
-   <div class="mx-24 mt-16 h-96">
+   <div class="mx-24 mt-16">
     <h5 class="text-xl font-semibold mb-3">Reach out to us!</h5>
     <label for="email">Email address</label>
     <input class="block w-full h-10 rounded-lg border border-gray-300 px-3 mt-2 mb-3" type="text" name="email" id="email" placeholder="name@exmaple.com" >
